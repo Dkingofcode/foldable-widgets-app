@@ -1,0 +1,33 @@
+<div>
+    <button (click)="toggleFold()">{{ isFolded ? 'Spread' : 'Fold' }}</button>
+</div>
+
+<div class="cards-container" [ngClass]="{ 'folded' : isFolded }">
+    <div class="card" *ngFor="let card of cards; let i = index" [hidden]="isFolded && currentCard !== i">
+      <h3>{{ card.title }}</h3>
+      <p>{{ card.content }}</p>
+    </div>
+</div>
+
+<div>
+    <button (click)="prevCard()">&#8592;</button>
+    <button (click)="nextCard()">&#8594;</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
