@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { WidgetsComponent} from "./widgets/widgets.component";
 import { CommonModule } from '@angular/common';
+import { HeaderComponent } from './header.component';
+
 
 @Component({
   selector: 'app-root',
